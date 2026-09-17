@@ -5,7 +5,6 @@ import 'package:flutter_app/core/styles/Units.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:go_router/go_router.dart';
-import 'package:google_symbols_icons/google_symbols_icons.dart';
 
 class SigninPage extends StatelessWidget {
   const SigninPage({super.key});
