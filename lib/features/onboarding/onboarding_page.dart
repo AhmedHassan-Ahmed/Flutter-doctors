@@ -13,11 +13,11 @@ class OnboardingPage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            SizedBox(height: Units.h(context, 40)),
+            SizedBox(height: Units.height(context, 40)),
             Row(
               mainAxisAlignment: .center,
               children: [
-                SizedBox(width: Units.w(context, 5)),
+                SizedBox(width: Units.width(context, 5)),
                 Text(
                   'Docdoc',
                   style: TextStyle(
@@ -28,10 +28,10 @@ class OnboardingPage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: Units.h(context, 35)),
+            SizedBox(height: Units.height(context, 35)),
             SizedBox(
               width: double.infinity,
-              height: Units.h(context, 390),
+              height: Units.height(context, 390),
               child: Image.asset('assets/images/doctor.png', fit: BoxFit.cover),
             ),
             const Spacer(),
@@ -53,9 +53,9 @@ class OnboardingPage extends StatelessWidget {
                 color: ColorManager.primary,
               ),
             ),
-            SizedBox(height: Units.h(context, 18)),
+            SizedBox(height: Units.height(context, 18)),
             Padding(
-              padding: .symmetric(horizontal: Units.w(context, 35)),
+              padding: .symmetric(horizontal: Units.width(context, 35)),
               child: Text(
                 'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.',
                 textAlign: .center,
@@ -66,12 +66,12 @@ class OnboardingPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: Units.h(context, 15)),
+            SizedBox(height: Units.height(context, 15)),
             Padding(
-              padding: .symmetric(horizontal: Units.w(context, 32)),
+              padding: .symmetric(horizontal: Units.width(context, 32)),
               child: SizedBox(
                 width: double.infinity,
-                height: Units.h(context, 52),
+                height: Units.height(context, 52),
                 child: ElevatedButton(
                   onPressed: () {
                     context.go('/login');
@@ -79,7 +79,7 @@ class OnboardingPage extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: ColorManager.primary,
                     shape: RoundedRectangleBorder(
-                      borderRadius: .circular(Units.r(context, 15)),
+                      borderRadius: .circular(Units.radius(context, 15)),
                     ),
                   ),
                   child: Text(
@@ -93,7 +93,7 @@ class OnboardingPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: Units.h(context, 45)),
+            SizedBox(height: Units.height(context, 45)),
           ],
         ),
       ),

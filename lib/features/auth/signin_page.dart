@@ -16,11 +16,11 @@ class SigninPage extends StatelessWidget {
       backgroundColor: ColorManager.background,
       body: SafeArea(
         child: Padding(
-          padding: .symmetric(horizontal: Units.w(context, 24)),
+          padding: .symmetric(horizontal: Units.width(context, 24)),
           child: Column(
             crossAxisAlignment: .start,
             children: [
-              SizedBox(height: Units.h(context, 65)),
+              SizedBox(height: Units.height(context, 65)),
 
               Text(
                 'Create Account',
@@ -31,7 +31,7 @@ class SigninPage extends StatelessWidget {
                 ),
               ),
 
-              SizedBox(height: Units.h(context, 10)),
+              SizedBox(height: Units.height(context, 10)),
 
               Text(
                 "Sign up now and start exploring all that our app has to offer. We're excited to welcome you to our community!",
@@ -42,7 +42,7 @@ class SigninPage extends StatelessWidget {
                 ),
               ),
 
-              SizedBox(height: Units.h(context, 35)),
+              SizedBox(height: Units.height(context, 35)),
 
               TextField(
                 keyboardType: TextInputType.emailAddress,
@@ -53,13 +53,13 @@ class SigninPage extends StatelessWidget {
                     color: ColorManager.hint,
                   ),
                   contentPadding: .symmetric(
-                    horizontal: Units.w(context, 20),
-                    vertical: Units.h(context, 17),
+                    horizontal: Units.width(context, 20),
+                    vertical: Units.height(context, 17),
                   ),
                 ),
               ),
 
-              SizedBox(height: Units.h(context, 15)),
+              SizedBox(height: Units.height(context, 15)),
 
               TextField(
                 obscureText: true,
@@ -70,13 +70,13 @@ class SigninPage extends StatelessWidget {
                     color: ColorManager.hint,
                   ),
                   contentPadding: .symmetric(
-                    horizontal: Units.w(context, 20),
-                    vertical: Units.h(context, 17),
+                    horizontal: Units.width(context, 20),
+                    vertical: Units.height(context, 17),
                   ),
                 ),
               ),
 
-              SizedBox(height: Units.h(context, 15)),
+              SizedBox(height: Units.height(context, 15)),
 
               TextField(
                 keyboardType: TextInputType.phone,
@@ -87,23 +87,23 @@ class SigninPage extends StatelessWidget {
                     color: ColorManager.hint,
                   ),
                   contentPadding: .symmetric(
-                    horizontal: Units.w(context, 20),
-                    vertical: Units.h(context, 17),
+                    horizontal: Units.width(context, 20),
+                    vertical: Units.height(context, 17),
                   ),
                 ),
               ),
 
-              SizedBox(height: Units.h(context, 32)),
+              SizedBox(height: Units.height(context, 32)),
 
               SizedBox(
                 width: double.infinity,
-                height: Units.h(context, 52),
+                height: Units.height(context, 52),
                 child: ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
                     backgroundColor: ColorManager.primary,
                     shape: RoundedRectangleBorder(
-                      borderRadius: .circular(Units.r(context, 15)),
+                      borderRadius: .circular(Units.radius(context, 15)),
                     ),
                   ),
                   child: Text(
@@ -117,12 +117,12 @@ class SigninPage extends StatelessWidget {
                 ),
               ),
 
-              SizedBox(height: Units.h(context, 48)),
+              SizedBox(height: Units.height(context, 48)),
 
               Row(
                 children: [
                   Padding(
-                    padding: .symmetric(horizontal: Units.w(context, 110)),
+                    padding: .symmetric(horizontal: Units.width(context, 110)),
                     child: Text(
                       'Or sign up with',
                       style: TextStyle(
@@ -134,17 +134,17 @@ class SigninPage extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(height: Units.h(context, 25)),
+              SizedBox(height: Units.height(context, 25)),
 
               Row(
                 mainAxisAlignment: .center,
                 children: [
                   FaIcon(FontAwesomeIcons.google),
-                  SizedBox(width: Units.w(context, 24)),
+                  SizedBox(width: Units.width(context, 24)),
 
                   FaIcon(FontAwesomeIcons.facebook),
 
-                  SizedBox(width: Units.w(context, 25)),
+                  SizedBox(width: Units.width(context, 25)),
 
                   FaIcon(FontAwesomeIcons.apple),
                 ],
@@ -196,7 +196,7 @@ class SigninPage extends StatelessWidget {
                 ),
               ),
 
-              SizedBox(height: Units.h(context, 25)),
+              SizedBox(height: Units.height(context, 25)),
 
               Center(
                 child: Row(
@@ -226,7 +226,7 @@ class SigninPage extends StatelessWidget {
                 ),
               ),
 
-              SizedBox(height: Units.h(context, 38)),
+              SizedBox(height: Units.height(context, 38)),
             ],
           ),
         ),
