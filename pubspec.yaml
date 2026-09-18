@@ -37,6 +37,9 @@ dependencies:
   go_router: ^18.0.1
   google_symbols_icons: ^0.1.7
   font_awesome_flutter: ^11.0.0
+  http: ^1.6.0
+  flutter_bloc: ^9.1.1
+  shared_preferences: ^2.5.5
 
 dev_dependencies:
   flutter_test:
