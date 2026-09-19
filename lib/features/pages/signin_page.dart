@@ -190,7 +190,7 @@ class _SigninPageState extends State<SigninPage> {
                 GestureDetector(
                   onTap: () => context.go('/home'),
                   child: Text(
-                    'hack system and go to home',
+                    'hack system and go to home ',
                     style: TextStyle(
                       fontSize: Units.textSize(context, 11),
                       color: ColorManager.primary,
